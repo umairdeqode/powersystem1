@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "a8505c74-2397-4d04-9604-ad792add4ca0",
+		"name": "PowerSystemCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24000046"
+	},
+	"item": [
+		{
+			"name": "localhost:8082/powerSystem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n    \"batteryName\": \"Cannington\",\n    \"postcode\": \"6107\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Midland\",\n    \"postcode\": \"6057\",\n    \"batteryCapacity\": 50500\n  },\n  {\n    \"batteryName\": \"Hay Street\",\n    \"postcode\": \"6000\",\n    \"batteryCapacity\": 23500\n  },\n  {\n    \"batteryName\": \"Mount Adams\",\n    \"postcode\": \"6525\",\n    \"batteryCapacity\": 12000\n  },\n  {\n    \"batteryName\": \"Koolan Island\",\n    \"postcode\": \"6733\",\n    \"batteryCapacity\": 10000\n  },\n  {\n    \"batteryName\": \"Armadale\",\n    \"postcode\": \"6992\",\n    \"batteryCapacity\": 25000\n  },\n  {\n    \"batteryName\": \"Lesmurdie\",\n    \"postcode\": \"6076\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Kalamunda\",\n    \"postcode\": \"6076\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Carmel\",\n    \"postcode\": \"6076\",\n    \"batteryCapacity\": 36000\n  },\n  {\n    \"batteryName\": \"Bentley\",\n    \"postcode\": \"6102\",\n    \"batteryCapacity\": 85000\n  },\n  {\n    \"batteryName\": \"Akunda Bay\",\n    \"postcode\": \"2084\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Werrington County\",\n    \"postcode\": \"2747\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Bagot\",\n    \"postcode\": \"0820\",\n    \"batteryCapacity\": 27000\n  },\n  {\n    \"batteryName\": \"Yirrkala\",\n    \"postcode\": \"0880\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"University of Melbourne\",\n    \"postcode\": \"3010\",\n    \"batteryCapacity\": 85000\n  },\n  {\n    \"batteryName\": \"Norfolk Island\",\n    \"postcode\": \"2899\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Ootha\",\n    \"postcode\": \"2875\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Kent Town\",\n    \"postcode\": \"5067\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Northgate Mc\",\n    \"postcode\": \"9464\",\n    \"batteryCapacity\": 13500\n  },\n  {\n    \"batteryName\": \"Gold Coast Mc\",\n    \"postcode\": \"9729\",\n    \"batteryCapacity\": 50000\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/powerSystem",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"powerSystem"
+					]
+				},
+				"description": "POST Request - for saving the data of all data into the database (Battery Name, Postcode and Battery capacity)"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/powerSystem/5500/7500",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/powerSystem/5500/7500",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"powerSystem",
+						"5500",
+						"7500"
+					]
+				},
+				"description": "GET Request - for fetching the data (A list of names of batteries with postcodes between the given range store in alphabetical order) from the database."
+			},
+			"response": []
+		}
+	]
+}
